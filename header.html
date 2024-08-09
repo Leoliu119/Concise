@@ -1,0 +1,31 @@
+<header>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="products.html">Products</a>
+            <a href="collections.html">Collections</a>
+
+        </div>
+        <div class="header-logo">
+            <a href="index.html" class="logo-link">
+                <img src="images/Concise_fullblack.png" alt="Company Logo">
+            </a>
+        </div>
+        <div class="navbar-right">
+            <a href="about.html">About</a>
+            <a href="catalogs.html">Catalogs</a>
+
+            <div class="search-container">
+                <img src="images/search-icon.png" class="search-icon" onclick="toggleSearch()" alt="Search Icon">
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="search-overlay">
+    <input type="text" onfocus="handleInputFocus(event)" onblur="handleInputBlur(event)">
+    <span class="close-icon" onclick="toggleSearch()">&#10006;</span>
+</div>
+
+</header>
+
+<!--<a href="projects.html">Projects</a>, <a href="showroom.html">Showroom</a>-->

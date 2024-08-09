@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  .header-width-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    display: none;
+  }
+
+  .header-logo {
+    display: block;
+    /* 确保在移动设备上显示徽标 */
+    position: absolute;
+    /* 固定在顶部 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* 根据需要调整 */
+
+    /* 根据需要调整 */
+    z-index: 1002;
+    /* 确保在其他元素之上显示 */
+
+  }
+
+  .overlay-text {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .header-width-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive-image-container {
+    padding: 5px;
+  }
+
+  .overlay-text {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+/* 确保图片在不同屏幕尺寸下正常缩放 */

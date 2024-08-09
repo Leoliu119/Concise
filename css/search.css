@@ -1,0 +1,52 @@
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 24px;
+    /* 根据图标大小调整 */
+    height: 24px;
+    /* 根据图标大小调整 */
+    display: inline-block;
+    /* 确保图标显示 */
+    background-size: contain;
+    /* 确保图标适应容器 */
+}
+
+.search-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-overlay input {
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 36px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 36px;
+    position: absolute;
+    bottom: 20px;
+    color: #999999;
+    /* 灰色 */
+}

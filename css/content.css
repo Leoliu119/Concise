@@ -1,0 +1,29 @@
+.content {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* 文字内容样式 */
+.text-content {
+    max-width: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-content h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0vh;
+}
+
+.text-content p {
+    text-align: left;
+    line-height: 1.6;
+    /* 调整每行的间隙 */
+    font-size: 20px;
+    margin-bottom:5vh;
+    margin-top: 5vh;
+}
+
+/*vw 表示视口宽度的百分比，vh 表示视口高度的百分比。这些单位在页面缩放时会自动调整大小。*/
