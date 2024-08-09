@@ -1,0 +1,100 @@
+/* 布局样式 */
+.container {
+  flex: 1;
+  padding: 0px 0px 50px;
+  /* 确保内容不被header遮住 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  color:#484e4b;
+}
+
+
+.responsive-image-container {
+  position: relative;
+  width: 100%;
+  /* 确保容器宽度为100% */
+  overflow: hidden;
+  /* 确保内容不会超出容器 */
+
+  /* 根据需要调整 */
+  box-sizing: border-box;
+  /* 包括padding在内计算宽度 */
+}
+
+.section-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.header-width-image {
+  width: 100%;
+  /* 使图片宽度与父元素相同 */
+  height: auto;
+  /* 保持图片比例 */
+  display: block;
+  /* 使图片成为块级元素 */
+  max-width: 100%;
+  /* 防止图片超过父元素宽度 */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* 设置相对定位以包含绝对定位的子元素 */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  /* 绝对定位 */
+  top: 2%;
+  /* 垂直居中 */
+  left: 50%;
+  /* 水平居中 */
+  transform: translate(-50%, -50%);
+  /* 使用 transform 进行居中对齐 */
+  color: white;
+  /* 文字颜色 */
+  background-color: rgba(0, 0, 0, 0);
+  /* 半透明背景 */
+  padding: 10px;
+  /* 内边距 */
+  border-radius: 5px;
+  /* 圆角边框 */
+  text-align: center;
+  /* 文字居中 */
+  font-size: 1.3vw;
+  /* 使用 vw 单位调整字体大小 */
+}
+
+/* 图片库样式 */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  /* 根据需要调整 */
+}
+
+.image-item {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* 保持图片比例 */
+}

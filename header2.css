@@ -1,0 +1,80 @@
+/* 头部样式 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6ddcc;
+    /* 米白色背景 */
+    color: #999999;
+    /* 灰色文字 */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #999999;
+    /* 灰色文字 */
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #999999;
+    /* 灰色 */
+    transition: width 0.25s ease-out;
+    display: block;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.logo-link {
+    text-decoration: none;
+    /* 去除下划线 */
+}
+
+/* 防止动态下划线应用到.logo-link */
+.logo-link::after {
+    display: none;
+}
+
+.navbar .logo-link::after {
+    display: none;
+}
+
+.company-name img {
+    width: 200px;
+    height: auto;
+}
