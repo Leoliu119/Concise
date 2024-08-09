@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONSICE HOME - OUTDOOR FURNITURE</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- 引用外部CSS文件 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="header-container"></div>
+  <div id="search-overlay-container"></div>
+  <div id="menu-container"></div>
+  <!-- 插入图片 -->
+  <div class="container">
+    <div class="responsive-image-container">
+      <img src="images\home.jpg" alt="Outdoor Furniture" class="header-width-image" />
+
+      <div class="overlay-text">/Home</div>
+      <div class="text-content">
+        <p>- Concise Home is an outdoor concept that transcends time and space. In summer and winter, by the blue sea,
+          amidst green
+          hills, on a sun-kissed terrace, or even in a city, where life in the open air and vegetation take center
+          stage. Concise
+          Home furnishings are designed to seamlessly fit into any environment and endure over time, thanks to the
+          quality of
+          their design and materials. In the mountains, surrounded by woods and snowy peaks, another ideal setting for
+          Concise
+          Home collections, which blend tradition and modernity, natural warmth, and sophisticated elegance with perfect
+          balance.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#header-container").load("header.html");
+      $("#search-overlay-container").load("search-overlay.html");
+      $("#menu-container").load("menu.html");
+      $("#footer-container").load("footer.html");
+    });
+  </script>
+  <div id="footer-container"></div>
+  <script src="script.js"></script>
+  <!-- 引用外部JavaScript文件 -->
+</body>
+
+</html>

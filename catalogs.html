@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONSICE - OUTDOOR FURNITURE</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- 引用外部CSS文件 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <div id="search-overlay-container"></div>
+    <div id="menu-container"></div>
+    <script>
+        $(document).ready(function () {
+            $("#header-container").load("header.html");
+            $("#search-overlay-container").load("search-overlay.html");
+            $("#menu-container").load("menu.html");
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+    <div class="container">
+        <section id="home" class="content">
+            <h2 class="section-title">Welcome to Consice</h2>
+            <div class="home">
+                <!-- Add home content here -->
+                <p>
+                    Discover our range of outdoor furniture, designed to bring comfort
+                    and style to your outdoor spaces.
+                </p>
+            </div>
+        </section>
+    </div>
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+    <!-- 引用外部JavaScript文件 -->
+</body>
+
+</html>
