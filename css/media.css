@@ -1,4 +1,21 @@
 @media (max-width: 768px) {
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .text-content {
+    width: 90% !important;
+    /* 使用 !important 提高优先级 */
+    padding: 10px 15px !important;
+    /* 确保样式生效 */
+    text-align: center
+  }
+
+
   .header-width-image {
     width: 100%;
     height: auto;
@@ -6,6 +23,21 @@
 
   .menu-icon {
     display: block;
+  }
+
+  /* 图片库样式 */
+  .image-gallery {
+    flex-direction: column;
+    /* 在移动设备上垂直排列 */
+    align-items: center;
+    /* 图片居中对齐 */
+  }
+
+  .image-gallery img {
+    width: 100%;
+    /* 在移动设备上每张图片占据整个宽度 */
+    margin: 10px 0;
+    /* 上下间距 */
   }
 
   .navbar-left,
@@ -25,7 +57,18 @@
     /* 根据需要调整 */
     z-index: 1002;
     /* 确保在其他元素之上显示 */
+  }
 
+  .contact-form {
+    background-color: #ab8c79;
+    color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    /* 添加圆角 */
+    box-sizing: border-box;
+    /* 确保 padding 包含在宽度内 */
   }
 
   .overlay-text {
@@ -33,8 +76,22 @@
     padding: 8px;
   }
 
-  footer {
-    padding: 20px;
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* 可根据需要调整 */
+  }
+
+  .input-container input {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* 输入框之间的间距 */
+  }
+
+  .contact-form button {
+    align-self: center;
   }
 }
 
@@ -45,6 +102,12 @@
 
   .container {
     width: 100%;
+  }
+
+  .text-content {
+    width: 85%;
+    text-align: center
+      /* 进一步减少内边距 */
   }
 
   .header-width-image {
